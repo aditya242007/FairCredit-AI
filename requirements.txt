@@ -1,12 +1,16 @@
+
 pandas
 numpy
 matplotlib
 seaborn
 scikit-learn
 openpyxl
+xlrd
 jupyter
 ipykernel
 streamlit
 plotly
 joblib
 fairlearn
+shap
+statsmodels
