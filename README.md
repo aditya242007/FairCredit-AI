@@ -49,17 +49,26 @@ Differences between groups are indicators for further investigation, not proof o
 ```text
 FairCredit-AI/
 ├── data/
+│   └── README.md
 ├── notebooks/
+│   ├── 01_data_audit.ipynb
+│   ├── 02_eda_statistics.ipynb
+│   ├── 03_model_training.ipynb
+│   └── 04_fairness_analysis.ipynb
 ├── src/
 │   ├── preprocessing.py
 │   ├── train.py
 │   ├── evaluate.py
 │   └── fairness.py
 ├── models/
+│   └── README.md
 ├── outputs/
+│   └── figures/
 ├── app.py
 ├── requirements.txt
-└── README.md
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ## Setup
