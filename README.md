@@ -48,27 +48,36 @@ Differences between groups are indicators for further investigation, not proof o
 
 ```text
 FairCredit-AI/
+│
+├── .venv/                                  # Python virtual environment
+├── .venv-1/                                # Additional virtual environment
 ├── data/
-│   └── README.md
-├── notebooks/
-│   ├── 01_data_audit.ipynb
-│   ├── 02_eda_statistics.ipynb
-│   ├── 03_model_training.ipynb
-│   └── 04_fairness_analysis.ipynb
-├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── fairness.py
+│   └── default of credit card clients.xls  # Original dataset
 ├── models/
-│   └── README.md
+│   └── faircredit_model.joblib             # Trained ML model
+│
+├── notebooks/
+│   ├── 01_data_audit.ipynb                 # Data inspection and quality
+│   ├── 02_eda_statistics.ipynb             # EDA and statistical analysis
+│   ├── 03_model_training.ipynb              # Model training and comparison
+│   ├── 04_fairness_analysis.ipynb           # Original fairness analysis
+│   └── 04_fairness_analysis_with_confidence_intervals.ipynb
+│                                             # Fairness with 95% confidence intervals
 ├── outputs/
-│   └── figures/
-├── app.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
+│   └── figures/                             # Saved charts and figures
+│
+├── src/
+│   ├── __pycache__/                         # Python cache files
+│   ├── preprocessing.py                     # Data loading and preparation
+│   ├── train.py                             # Model training pipeline
+│   ├── evaluate.py                          # Model performance evaluation
+│   └── fairness.py                          # Fairness metrics by group
+│
+├── app.py                                   # Streamlit web dashboard
+├── requirements.txt                         # Project dependencies
+├── README.md                                # Project documentation
+├── LICENSE                                  # Project license
+└── .gitignore                               # Files excluded from Git
 ```
 
 ## Setup
