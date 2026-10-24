@@ -122,7 +122,6 @@ streamlit run app.py
 - Group-level metrics do not establish the presence or absence of discrimination on their own.
 - Small demographic groups can have uncertain estimates.
 - SHAP explanations describe how model features contribute to a prediction; they do not establish causality.
-- This project is for learning and demonstration, not real-world lending decisions.
 
 ## License
 
